@@ -16,5 +16,5 @@ def my_select(collection)
   new_collection
 end
 
-my_select(0) {|i| i}
+my_select("") {|i| "#{i}"}
 
