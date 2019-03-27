@@ -8,12 +8,14 @@ def my_select(collection)
     collection_count = collection.size  
     while counter < collection_count
       new_value = yield collection[counter]
-      new_collection << new_value
+      if new_value != nil 
+        new_collection << new_value
+      end
       counter += 1
     end
   end
   new_collection
 end
 
-my_select("It Me") {|i| i even? }
+my_select("0") {|i| i.even? i : nil }
 
