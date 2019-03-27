@@ -17,5 +17,5 @@ def my_select(collection)
   new_collection
 end
 
-my_select.do { |i| i.even? i }
+my_select { |i| i.even? i }
 
