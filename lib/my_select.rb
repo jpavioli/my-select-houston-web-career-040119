@@ -6,7 +6,7 @@ def my_select(collection)
   else 
     collection_count = collection.size  
     while counter < collection_count
-    if i.even?
+    if i % 2 == 0
       new_value = yield collection[counter]
       new_collection << new_value
     end
