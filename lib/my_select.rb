@@ -17,8 +17,6 @@ end
 my_select.do |i| 
   if i.even?
     "#{i}"
-  else
-    ""
   end
 end
 
