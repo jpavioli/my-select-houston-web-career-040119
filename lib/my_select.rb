@@ -6,13 +6,15 @@ def my_select(collection)
   else 
     collection_count = collection.size  
     while counter < collection_count
+    if i.even?
       new_value = yield collection[counter]
       new_collection << new_value
+    end
       counter += 1
     end
   end
   new_collection
 end
 
-my_select(0) {|i| i.even? i}
+my_select(0) {|i| i}
 
