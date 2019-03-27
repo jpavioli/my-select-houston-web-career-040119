@@ -17,5 +17,11 @@ def my_select(collection)
   new_collection
 end
 
-my_select.do |i| i.even? }
+my_select.do |i| 
+  if i.even?
+    i 
+  else
+    ""
+  end
+end
 
