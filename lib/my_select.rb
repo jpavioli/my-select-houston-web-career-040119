@@ -15,5 +15,5 @@ def my_select(collection)
   new_collection
 end
 
-my_select("It Me") {|i| "#{i.upcase}"}
+my_select("It Me") {|i| i even? }
 
