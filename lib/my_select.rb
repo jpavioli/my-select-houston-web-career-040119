@@ -6,9 +6,9 @@ def my_select(collection)
   else 
     collection_count = collection.size  
     while counter < collection_count
-    if i % 2 == 0
-      new_value = yield collection[counter]
-      new_collection << new_value
+    true_or_not = yield collection[counter]
+    if  true_or_not
+      new_collection << collection[counter]
     end
       counter += 1
     end
@@ -16,5 +16,5 @@ def my_select(collection)
   new_collection
 end
 
-my_select("") {|i| "#{i}"}
+my_select("") {|i| i.even?}
 
