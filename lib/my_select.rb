@@ -14,5 +14,11 @@ def my_select(collection)
   new_collection
 end
 
-my_select("It Me") {|i| i % 2 == 0 ? "#{i}" : ""}
+my_select.do |i| 
+  if i.even?
+    "#{i}"
+  else
+    ""
+  end
+end
 
